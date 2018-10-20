@@ -1,0 +1,6 @@
+.root {
+    -fx-background-image: url("/resources/images/menu_bg.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 900 630;
+    -fx-background-position: center center;
+}

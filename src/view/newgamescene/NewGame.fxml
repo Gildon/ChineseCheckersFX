@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.newgamescene.NewGameController">
+   <children>
+      <Separator layoutX="447.0" layoutY="31.0" orientation="VERTICAL" prefHeight="528.0" prefWidth="5.0" rotate="-0.0" />
+      <Label layoutX="98.0" layoutY="31.0" text="Number of players">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="79.0" layoutY="92.0" mnemonicParsing="false" onAction="#adjustAvailablePlayerColorsAndHumanPlayers" selected="true" text="2">
+         <toggleGroup>
+            <ToggleGroup fx:id="numPlayers" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="147.0" layoutY="92.0" mnemonicParsing="false" onAction="#adjustAvailablePlayerColorsAndHumanPlayers" text="3" toggleGroup="$numPlayers" />
+      <RadioButton layoutX="215.0" layoutY="92.0" mnemonicParsing="false" onAction="#adjustAvailablePlayerColorsAndHumanPlayers" text="4" toggleGroup="$numPlayers" />
+      <RadioButton layoutX="282.0" layoutY="92.0" mnemonicParsing="false" onAction="#adjustAvailablePlayerColorsAndHumanPlayers" text="5" toggleGroup="$numPlayers" />
+      <RadioButton layoutX="352.0" layoutY="92.0" mnemonicParsing="false" onAction="#adjustAvailablePlayerColorsAndHumanPlayers" text="6" toggleGroup="$numPlayers" />
+      <Label layoutX="79.0" layoutY="222.0" text="# of colors per player">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="148.0" layoutY="295.0" mnemonicParsing="false" selected="true" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="numColors" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="216.0" layoutY="295.0" mnemonicParsing="false" text="2" toggleGroup="$numColors" />
+      <RadioButton layoutX="283.0" layoutY="295.0" mnemonicParsing="false" text="3" toggleGroup="$numColors" />
+      <Label layoutX="92.0" layoutY="384.0" text="Number of humans">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="46.0" layoutY="446.0" mnemonicParsing="false" onAction="#adjustVisibleNameTextFields" selected="true" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="numHumans" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="108.0" layoutY="446.0" mnemonicParsing="false" onAction="#adjustVisibleNameTextFields" text="2" toggleGroup="$numHumans" />
+      <RadioButton disable="true" layoutX="176.0" layoutY="446.0" mnemonicParsing="false" onAction="#adjustVisibleNameTextFields" text="3" toggleGroup="$numHumans" />
+      <RadioButton disable="true" layoutX="244.0" layoutY="446.0" mnemonicParsing="false" onAction="#adjustVisibleNameTextFields" text="4" toggleGroup="$numHumans" />
+      <RadioButton disable="true" layoutX="311.0" layoutY="446.0" mnemonicParsing="false" onAction="#adjustVisibleNameTextFields" text="5" toggleGroup="$numHumans" />
+      <RadioButton disable="true" layoutX="377.0" layoutY="446.0" mnemonicParsing="false" onAction="#adjustVisibleNameTextFields" text="6" toggleGroup="$numHumans" />
+      <Group fx:id="playerTextFields">
+         <children>
+            <TextField layoutX="590.0" layoutY="65.0" promptText="Enter player name" />
+            <TextField disable="true" layoutX="590.0" layoutY="105.0" promptText="Enter player name" visible="false" />
+            <TextField disable="true" layoutX="590.0" layoutY="145.0" promptText="Enter player name" visible="false" />
+            <TextField disable="true" layoutX="590.0" layoutY="185.0" promptText="Enter player name" visible="false" />
+            <TextField disable="true" layoutX="590.0" layoutY="225.0" promptText="Enter player name" visible="false" />
+            <TextField disable="true" layoutX="590.0" layoutY="265.0" promptText="Enter player name" visible="false" />
+         </children>
+      </Group>
+      <Group fx:id="playerLabels">
+         <children>
+            <Label layoutX="500.0" layoutY="70.0" text="Player 1" />
+            <Label disable="true" layoutX="500.0" layoutY="110.0" text="Player 2" visible="false" />
+            <Label disable="true" layoutX="500.0" layoutY="150.0" text="Player 3" visible="false" />
+            <Label disable="true" layoutX="500.0" layoutY="190.0" text="Player 4" visible="false" />
+            <Label disable="true" layoutX="500.0" layoutY="230.0" text="Player 5" visible="false" />
+            <Label disable="true" layoutX="500.0" layoutY="270.0" text="Player 6" visible="false" />
+         </children>
+      </Group>
+      <Button fx:id="startGameButton" disable="true" layoutX="485.0" layoutY="377.0" mnemonicParsing="false" onAction="#isPressedStartGame" prefHeight="159.0" prefWidth="380.0" text="Start Game">
+         <font>
+            <Font name="System Bold Italic" size="57.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+.marble {
+    -fx-effect: innershadow(gaussian, white, 15, 0.05, -5, -5);
+    -fx-effect: dropshadow(gaussian, black, 10, 0.1, 5, 5);
+}
+
+.emptymarble {
+    -fx-effect: innershadow(gaussian, black, 10, 0.01, 3, 3);
+}
+
+.playerbutton {
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+    -fx-scale-x: 1.3;
+    -fx-scale-y: 1.3;
+}
+
+.playerlabel {
+    -fx-font: bold 22pt "Cambria";
+    -fx-effect: dropshadow(gaussian, black, 2, 0.2, 0, 0);
+}
+
+.playerindicator {
+    -fx-scale-x: 1.8;
+    -fx-scale-y: 1.8;
+    -fx-stroke: black;
+    -fx-stroke-width: 1.5;
+}
+
+#playerslabel {
+    -fx-font-size: 40;
+    -fx-underline: true;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, black, 5, 0, 0, 2);
+}
+
+#playersseparator {
+    -fx-effect: dropshadow(gaussian, black, 5, 0.5, 0, 0);
+    -fx-translate-y: 16;
+}
+
+#abandongamebutton {
+    -fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+#playermessage {
+    -fx-font: bold 20pt "Cambria";
+    -fx-text-fill: #ff6666;
+}

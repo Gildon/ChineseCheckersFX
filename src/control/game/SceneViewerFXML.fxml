@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.game.SceneViewerController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Options">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#returnToMenu" text="Return to menu" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane fx:id="vistaHolder" maxHeight="-1.0" maxWidth="-1.0" prefHeight="197.0" prefWidth="397.0" style="-fx-background-image: url(@..\..\resources\images\bg.jpg);" VBox.vgrow="ALWAYS" />
+  </children>
+</VBox>
