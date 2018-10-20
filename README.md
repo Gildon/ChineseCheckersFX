@@ -1,0 +1,2 @@
+# ChineseCheckersFX
+JavaFX college project
